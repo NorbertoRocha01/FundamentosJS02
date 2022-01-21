@@ -211,7 +211,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
 
          
          
-      Função TOUPPERCASE()  --> transforma textos em maiusculo
+      Metodo TOUPPERCASE()  --> transforma textos em maiusculo
       
 
         Const nomesatualizados = 
@@ -221,6 +221,54 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
               transformando todos em MAIUSCULO
 
 
+
+
+      Metodo FILTER
+
+         e arrays nomes e notas
+
+       =====
+         const reprovados = nomes.FILTER( (alumo.indice) 
+               ==> notas[indice] < 5)
+
+          console.log('reprovados: ${reprovados}')
+
+
+           ===>> onde irá ser mostrado nomes dos alunos 
+                 com notas menores que 5
+
+
+           Obsd: o parametro "aluno" foi declarado mas
+                 não esta sendo usado, podeia usar no
+                 lugar desse parametro "aluno" o sinal "_"
+                 (anderline)
+
+
+
+       Metodo REDUCE
+
+
+          const salaJS = [7, 8, 8, 7, 10, 6.5, 4, 10, 7]
+          const salaJava = [6, 5, 8, 9, 5, 6]
+          const salaPython = [7, 3.5, 8, 9.5]
+
+          function mediaSala(notasDaSala) {
+               return notasDaSala.reduce((acum, atual) => 
+                   atual + acum, 0) / notasDaSala.length
+           }
+ 
+           console.log(`Média da sala JavaScript ${mediaSala(salaJS)}`)
+           console.log(`Média da sala Java ${mediaSala(salaJava)}`)
+           console.log(`Média da sala Python ${mediaSala(salaPython)}`)
+
+
+
+           const notas = [10, 6.5, 8, 7]
+
+           const media = notas.reduce((acum,atual) => 
+                           atual + acum,0) / notas.length
+
+           console.log(media)
 
 
 
