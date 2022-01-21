@@ -1,0 +1,161 @@
+
+
+https://cursos.alura.com.br/course/fundamentos-javascript-arrays/task/94699
+
+
+
+Array
+
+
+    const notas = [10, 6.5, 8, 7.5]
+
+    let media = (notas[0] + notas[1] + notas[2] + notas[3])
+        / notas.length
+
+     ==>> media irá receber a media da soma das notas
+
+          -->> LENGTH -- numero de campos
+
+
+    PUSH  -->>  inserir no array
+
+       const notas = [10, 6, 8]
+       notas.PUSH(7)
+
+         ==>> novo conteudo de notas [ 10, 6, 8, 7]
+
+
+    POP()  -->> retira ultimo item do Array
+
+       const notas = [10, 7, 8, 5, 10]
+       notas.POP()
+
+         ==>> novo conteudo de notas [ 10, 7, 8, 5]
+
+
+
+Documentação ARRAY
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
+
+    SLICE  -->> divide lista de array
+
+        const sala1 = nomes.slice(0, 14)
+
+          -->> onde nomes contem 30 nomes e
+               sala 1 ficará com os 15 primeiros
+
+        const sala1 = nomes.slice(0, nomes.length/2)
+
+           -->> LENGTH (qtd de array) divide por 2
+
+    
+        const sala2 = nomes.slice(15)
+
+          -->> se colocar só um parametro irá até o final
+               sala 2 ficará com os 15 ULTIMOS
+
+        const sala1 = nomes.slice(nomes.length/2)
+
+           -->> LENGTH (qtd de array) divide por 2
+
+
+
+   SPLICE  -->> retira/add do Array,  coluna especifica
+
+      lista.SPLICE(ini, QTD, xxxxxx)
+
+         onde --> INI ref a coluna inicial a ser deletado
+                  QTD ref a qtde a ser deletado
+
+                  xxxxxxx - item a ser incluido
+
+                   caso QTD seja = 0 não não será excluido
+                   nenhum item
+
+
+
+   CONCAT  -->> Junta 2 arrays
+
+      const slunif = sl1.CONCAT(sl2)
+
+           -->>    onde SLUNIF receberá o conteudo da
+                   SL1 + conteudo SL2
+
+
+ 
+
+   Array em DUAS Dimensões
+
+        alunos -->> lista de alunos
+
+        media  -->> relação das respectiva médias
+
+
+        Let  listaalunosnotas = [alunos, media]
+
+         -->> listaalunosmedia recebe 2 arrays
+
+
+        consoloe.log('${listaalunosmedia[0][0]}
+         sua média é ${listaalunosmedia[1][0]}')
+
+           onde --> 1o "[0]" refere-se ao ARRAY de alunos
+                       "[0]" refere-se a posição do aluno
+
+
+
+           onde --> 2o "[1]" refere-se ao ARRAY das notas
+                       "[0]" refere-se a posição da nota
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
