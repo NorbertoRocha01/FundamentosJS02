@@ -111,7 +111,79 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
 
 
 
-       
+   INCLUDES  -->> busca um dado dentro de um Array
+
+        alunos -->> lista de alunos
+        media  -->> relação das respectiva médias
+        Let  listaalunosnotas = [alunos, media]
+
+        const exibeNomeNota = (nomedoaluno) => {
+           if (listaalunosnotas[0].INCLUDES(nomedoaluno)) {
+               indice = listaalunosnotas[0].INDEXOF(nomedoaluno)
+               return listaalunosnotas[0][indice] + ' , sua media
+                 é ' + listanotasalunos[1][indice]
+           } else {
+               return "Aluno não está cadastrado"
+           }
+        }
+     
+
+       ==>> caso o nome (informado em nomedoaluno) existir na
+            1a array, irá salvar (em indice) a Coluna(posição)
+            irá recuperar no 2o Array a media pelo Indice
+            encontrado
+
+        *** INDEXOF recupera o numero da COLUNA(indice)
+                    da dado pesquisado
+
+         console.log(exibenomenota("Ana"))
+            -->> irá buscar "ANA", se existir busca a MEDIA
+                 e exibe
+
+                  Caso não Exista "ANA", exibirá
+                   "Aluno não cadastrado"
+
+
+     FOR  -->> Repetição
+
+          const numeros = [100, 200, 300, 400 ,500 ,600]
+
+          FOR (Let i = 0; i < numeros.Length; i++) {
+               console.log(i, numeros[i])
+             }
+
+           ==>> fica no loop adicionando +1 em "i"
+                enquanto seja < que quantidade de registros
+                no array (LENGTH)
+
+                exibindo i(INDICE) + numeros[i] (conteudo array)
+
+
+
+     FOREACH  -->> Repetição
+
+        const numeros = [100, 200, 300, 400 ,500 ,600]
+        let somanum = 0
+
+        numeros.FOREACH( num => {
+            somanum += num
+        })
+
+           ==>> onde NUM recebe conteudo de NUMEROS 
+                que esta indexado automaticamente no FOREACH,
+                 SOMANUM recebe soma dos campos do Array
+
+         let media = somanum / numeros.length
+         console.log(media)
+
+          ==> exibirá a media da soma dos numeros do Array
+
+
+     
+  
+
+
+
 
 
 
