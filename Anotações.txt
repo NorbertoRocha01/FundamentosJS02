@@ -179,14 +179,46 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
           ==> exibirá a media da soma dos numeros do Array
 
 
+   Funções CALLBACKs
+
+         Const nomes = ["Ana", "ju", "Leo", "Paula"]
+
+         nomes.ForEach(IMPRIMENOMES)
+
+         Function IMPRIMENOMES(nome) {
+             console.log(nome)
+          }
      
+         -->> Foi criada uma FUNÇÃO (ImprimeNomes)
+               para ser usada no FOREACH
+
+
   
+   Método MAP()  -- LÊ todos os campos de um Array
 
 
+     Const notas = [10, 9, 8, 7, 6]
 
+     Const notasatualizadas = notas.MAP( 
+             nota => nota== 10 ? nota : ++nota )     
 
+       ==>> onde irá ler todo o array (notas)
+            criando outro array(notasatualizadas)
+            add 1 no conteudo, menos se a nota já for 10
 
+         console.log(notasatualizadas)
+           [10, 10, 9, 8, 7]  resultado
 
+         
+         
+      Função TOUPPERCASE()  --> transforma textos em maiusculo
+      
+
+        Const nomesatualizados = 
+                 nomes.Map(nome => nome.TOUPPERCASE())
+
+        ==>> move um array com nome para nomesatualizados
+              transformando todos em MAIUSCULO
 
 
 
